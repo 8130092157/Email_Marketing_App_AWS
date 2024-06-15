@@ -174,19 +174,17 @@ I'm using `julienmuke.com` (if you need to purchase a domain you can use Amazon'
 like GoDaddy etc.)
 
 
-![Screenshot 2024-06-15 175236](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/c949bb86-409f-4453-b2a5-8ac762e3784e)
-
 
 
 4. Amazon is going to send an email to your email address, you'll need to open it up, click on the link to verify that you actually own the email address and once you do you'll be able to send emails from that address.
 
 
-![Screenshot 2024-02-29 at 15 55 25](https://github.com/julien-muke/Tiny_Tales_Mail/assets/110755734/a3dcc3a8-3f95-4a5b-b1c7-9fbed0eb9a5c)
+![Screenshot 2024-06-15 175236](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/c949bb86-409f-4453-b2a5-8ac762e3784e)
 
 
 5. If you successfully did all of those steps then you also will have a Sandbox dashboard
 
-![Get-set-up-Amazon-Simple-Email-Service-us-east-1-2](https://github.com/julien-muke/Tiny_Tales_Mail/assets/110755734/34845d15-cecd-4931-bf1a-55aa9f9fb7ff)
+![Screenshot 2024-06-15 181131](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/ff95851c-909b-4e2a-8c65-382b66c6d1de)
 
 
 ## ➡️ Step 4 - Sending a test email using Amazon SES
