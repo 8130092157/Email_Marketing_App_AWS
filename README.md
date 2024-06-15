@@ -9,7 +9,7 @@ In this hands-on tutorial, I’ll walk you through how to design and build a sim
 ## 📐 Architecture Design
 
 
-![Tiny Tales Mail -2](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/006fe0ae-d5b7-46b6-b712-e75b99540321)
+![Application Design](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/006fe0ae-d5b7-46b6-b712-e75b99540321)
 
 
 ## ⚙️ AWS Services Used
@@ -42,7 +42,7 @@ In this hands-on tutorial, I’ll walk you through how to design and build a sim
 4. For Bucket name, enter a name for your bucket, i'm going to name mine `jm-email-marketing`
 5. Block Public Access as best practice, and leave all the defaults, scroll down then click on "Create bucket"
 
-(https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/34ac6c75-c5b5-4028-b126-215736e5e883)
+![Create](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/34ac6c75-c5b5-4028-b126-215736e5e883)
 
 
 ## ➡️ Step 2 - Create The HTML email template & The CSV file with contact information
