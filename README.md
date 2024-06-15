@@ -444,13 +444,19 @@ Tip: If you don’t see your function, make sure you’re in the same region whe
 E. Select the Lambda function, mine was `SendSESEmailToContacts`, then click "Next"
 
 
-![Amazon-EventBridge-Scheduler-us-east-1 (1)](https://github.com/julien-muke/Tiny_Tales_Mail/assets/110755734/dba5323e-29cb-49e2-8de5-006a3c810ba1)
+
+![Screenshot 2024-06-15 181202](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/1eb15317-5a2f-40cf-9c64-054eb7625a8a)
+
+
+
 
 
 F. The schedule should be enabled by default, if you want to take any action after the schedule completes like deleting that will delete your schedule I'm going to select "none"
 G. You can just leave everything the default, then click "Next", 
 
-![Amazon-EventBridge-Scheduler-us-east-1 (3)-2](https://github.com/julien-muke/Tiny_Tales_Mail/assets/110755734/35d4806e-afab-495b-88ab-d093645f3858)
+
+![Screenshot 2024-06-15 181245](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/34b29deb-8afd-41f2-9871-4895667b8329)
+
 
 
 H. Review all, the click "Create schedule"
@@ -459,14 +465,18 @@ G. In few minutes it should trigger the Lambda function, the Lambda function sho
 Let's just go take a quick look at what happened and how you can debug if you didn't get the email like you thought you should:
 * Back in the EventBridge, clikc the target tab then click the target link
 
-![Screenshot 2024-02-29 at 16 52 24](https://github.com/julien-muke/Tiny_Tales_Mail/assets/110755734/d19bfee1-d52f-4f80-9523-fb9277d71b8d)
+![Screenshot 2024-06-15 181449](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/266062ea-1a19-4212-abc3-524a0cbca1d6)
 
 
 * That'll open up a new tab and then in Lambda if you come into the monitor tab this is where you can see what's going on with this particular function, then click "cloudwatch logs" 
 
 ✔️ If you check our log streams, if we look at the latest one, I've got success messages, I sent two different emails
 
-![Screenshot 2024-02-29 at 17 01 15](https://github.com/julien-muke/Tiny_Tales_Mail/assets/110755734/36e863db-71ef-45d0-885b-f60dc5997aac)
+![Screenshot 2024-06-15 181512](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/8a940f6b-c57b-48f0-a046-548bccd2ae73)
+
+![Screenshot 2024-06-15 181544](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/6786c212-0eff-439a-a9c6-58dfb5e74a35)
+
+![Screenshot 2024-06-15 181616](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/1556e5c0-9cd4-42df-bc75-3b540aed722b)
 
 
 ## 🏆 CHALLENGE: Ideas to enhance the application!
