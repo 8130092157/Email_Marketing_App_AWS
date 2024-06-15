@@ -39,7 +39,7 @@ In this hands-on tutorial, I’ll walk you through how to design and build a sim
 1. Sign in to the AWS Management Console and open the Amazon S3
 2. In the left navigation pane, choose Buckets
 3. Choose Create bucket
-4. For Bucket name, enter a name for your bucket, i'm going to name mine `jm-email-marketing`
+4. For Bucket name, enter a name for your bucket, i'm going to name mine `myemailstorage`
 5. Block Public Access as best practice, and leave all the defaults, scroll down then click on "Create bucket"
 
 ![Create](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/34ac6c75-c5b5-4028-b126-215736e5e883)
@@ -170,9 +170,6 @@ Before you start using Amazon SES, you must complete the following tasks:
 
 3. Add your sending domain, a domain identity that matches your website or business name. Amazon SES needs to be linked to your domain and verified in order to send emails to your recipients through SES.
 
-I'm using `julienmuke.com` (if you need to purchase a domain you can use Amazon's Route 53 or other providers
-like GoDaddy etc.)
-
 
 
 
@@ -233,7 +230,7 @@ We need to validate the individual email addresses that we want to send to, that
 We need a way to merge the email template using Lambda to create and send personalized emails to SES with the contacts and then send them to SES to the email service.
 
 1. Back to the console, navigate to Lambda, then click on "Create function"
-2. We are going to "Author from scratch", for the function name i'm going to use `SendSESEmailToContacts`, for Runtime we are going to use `python3.12` leave everything as default then click "Create function"
+2. We are going to "Author from scratch", for the function name i'm going to use `mySESConnection`, for Runtime we are going to use `python3.12` leave everything as default then click "Create function"
 
 
 
