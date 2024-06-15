@@ -179,12 +179,12 @@ like GoDaddy etc.)
 4. Amazon is going to send an email to your email address, you'll need to open it up, click on the link to verify that you actually own the email address and once you do you'll be able to send emails from that address.
 
 
-![Screenshot 2024-06-15 175236](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/c949bb86-409f-4453-b2a5-8ac762e3784e)
+![Screenshot 2024-06-15 181131](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/ff95851c-909b-4e2a-8c65-382b66c6d1de)
 
 
 5. If you successfully did all of those steps then you also will have a Sandbox dashboard
 
-![Screenshot 2024-06-15 181131](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/ff95851c-909b-4e2a-8c65-382b66c6d1de)
+![Screenshot 2024-06-15 181131](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/6c57e9bd-9dbb-4504-96cd-ecda4c7704e7)
 
 
 ## ➡️ Step 4 - Sending a test email using Amazon SES
@@ -193,7 +193,7 @@ Let's send an email to make sure everything is working
 
 1. On your Sandbox dashboard click on "Send test email"
 
-![Screenshot 2024-06-15 181131](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/6c57e9bd-9dbb-4504-96cd-ecda4c7704e7)
+![Screenshot 2024-06-15 175257](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/5c68176d-6547-4fb2-bc04-80c1623a35fc)
 
 
 2. Select "Raw" which will let us test with HTML format
@@ -202,12 +202,12 @@ Let's send an email to make sure everything is working
 4. Then paste in the HTML that we have from the email template on the Message box
 5. Click on "Send test email"
 
-![Screenshot 2024-06-15 175257](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/5c68176d-6547-4fb2-bc04-80c1623a35fc)
+![Screenshot 2024-06-15 175318](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/52c22b02-0be3-4c77-be0a-c665e6338484)
 
 6. Then you will get a green checkmark, everything is working
 
 
-![Screenshot 2024-06-15 175318](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/52c22b02-0be3-4c77-be0a-c665e6338484)
+![Screenshot 2024-06-15 175727](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/067eb646-3955-4a81-89e7-fb02bd2ab241)
 
 
 
@@ -219,14 +219,14 @@ We need to validate the individual email addresses that we want to send to, that
 2. Let's create a new identity, click on "Create identity"
 3. Identity type choose "Email address" and leave everything as default, then click "Create identity"
 
-![Screenshot 2024-06-15 175727](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/067eb646-3955-4a81-89e7-fb02bd2ab241)
+![Screenshot 2024-06-15 175804](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/22c23744-14ac-488e-9928-36974e9db561)
 
 
 4. You will recieve an email from your inbox, open it and click the link to verify, you will get a success message, we can now start sending emails to that address
 
 5. After you verify all the emails, you will see a list of verified emails
 
-![Screenshot 2024-06-15 175804](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/22c23744-14ac-488e-9928-36974e9db561)
+![Screenshot 2024-06-15 175858](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/9c4a3a0c-b15a-4ce0-837d-cf2d85ea2744)
 
 
 ## ➡️ Step 6 -  Creating a new Python Lambda function for email logic
@@ -237,7 +237,7 @@ We need a way to merge the email template using Lambda to create and send person
 2. We are going to "Author from scratch", for the function name i'm going to use `SendSESEmailToContacts`, for Runtime we are going to use `python3.12` leave everything as default then click "Create function"
 
 
-![Screenshot 2024-06-15 175858](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/9c4a3a0c-b15a-4ce0-837d-cf2d85ea2744)
+![Screenshot 2024-06-15 175915](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/1792c4ec-4bfb-4f24-9722-9af702ae9c3f)
 
 
 3. Scroll down to the code section, i've got some code already so you don't have to write this from scratch:
@@ -297,14 +297,14 @@ def lambda_handler(event, context):
 6. Grab this code then come back to the Lambda function and just replace everything
 7. Make sure to replace your `bucket_name` `email_template` `contact_csv_file` and `you@yourdomainname.com` with your information if you named them differently with mine
 
-![Screenshot 2024-06-15 175915](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/1792c4ec-4bfb-4f24-9722-9af702ae9c3f)
+![Screenshot 2024-06-15 180037](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/c575b009-d68d-4305-a97f-1add4a7e2df1)
 
 
 
 8. When copy and paste the Python and update it with your information, click on "Deploy"
 
 
-![Screenshot 2024-06-15 180037](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/c575b009-d68d-4305-a97f-1add4a7e2df1)
+![Screenshot 2024-06-15 180136](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/e0655d5a-23e4-475e-a3bf-276874a81d6c)
 
 
 ## ➡️ Step 7 - Configuring and running a test event for the Lambda function
@@ -312,7 +312,7 @@ def lambda_handler(event, context):
 1. Set up a new test event, click on the Arrow to the right of test, then configure test event, create a new event
 
 
-![Screenshot 2024-06-15 180136](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/e0655d5a-23e4-475e-a3bf-276874a81d6c)
+![Screenshot 2024-06-15 180233](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/21311f7c-0331-4959-9a46-db9260f1a9cf)
 
 
 2. We are going to name it `TestSendEmail`
@@ -325,7 +325,7 @@ def lambda_handler(event, context):
 }
 ```
 
-![Screenshot 2024-06-15 180233](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/21311f7c-0331-4959-9a46-db9260f1a9cf)
+![Screenshot 2024-06-15 180259](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/6ca50f05-f98f-4dc6-ba68-4f4a60227efc)
 
 
 
@@ -336,7 +336,7 @@ N.B: If you click on Test back over the Lambda source code, you will get an "ACC
 
 1. Back to the Lambda, go to configutation tab, under permissions, click "Role name"
 
-![Screenshot 2024-06-15 180259](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/6ca50f05-f98f-4dc6-ba68-4f4a60227efc)
+![Screenshot 2024-06-15 180333](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/9cfc92d1-3407-4835-8530-9374336757db)
 
 
 2. Scrolling down to permissions policies if we expand the execution Url, we just have some default permissions in to basically write to class watch logs there's nothing specific to S3 or SES, we need to add that manually to do that I'm going to go create a new Creating a new policy with permissions for S3 and SES policy with those permissions in it and then we'll attach it to this role when we're done
@@ -370,7 +370,7 @@ N.B: If you click on Test back over the Lambda source code, you will get an "ACC
 ```
 
 
-![Screenshot 2024-06-15 180333](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/9cfc92d1-3407-4835-8530-9374336757db)
+![Screenshot 2024-06-15 180400](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/b03fe2bc-05fe-42f7-930c-30f538693c14)
 
 
 
@@ -380,25 +380,25 @@ N.B: mAKE sure you leave the `/*` at the end your bucket name but just update yo
 3. When you click on "Next", name your policy `LambdaS3SESPolicy`, then click "Create policy"
 
 
-![Screenshot 2024-06-15 180400](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/b03fe2bc-05fe-42f7-930c-30f538693c14)
+![Screenshot 2024-06-15 180530](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/3008aa56-e60e-4f2b-9220-8ae48eea8480)
 
 
 4. Now the policy exists we just need to go back to the execution Role and attach it
 
-![Screenshot 2024-06-15 180530](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/3008aa56-e60e-4f2b-9220-8ae48eea8480)
+![Screenshot 2024-06-15 180605](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/996bee1c-1a0f-40ec-81fb-7ede77aa6127)
 
 
 5. Select the one we created `LambdaS3SESPolicy`
    
-![Screenshot 2024-06-15 180605](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/996bee1c-1a0f-40ec-81fb-7ede77aa6127)
+
+![Screenshot 2024-06-15 180633](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/0d8e839d-c756-4362-935d-4b9e68b7cd92)
 
 ✔️ The Lambda function should have the permissions it needs to talk to S3 as well as SCS
 
 6. Now let's run the test event for the Lambda function again, back to the Lambda function, source code section, click on "test" button
 
 
-
-![Screenshot 2024-06-15 180633](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/0d8e839d-c756-4362-935d-4b9e68b7cd92)
+![Screenshot 2024-06-15 181001](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/07178788-1fa7-4ed7-b47a-0d5434fb51ce)
 
 
 ✔️ this is looking better, I'm not getting an access denied, as you can see the email is sent to the two different email
@@ -407,7 +407,7 @@ addresses.
 Let's check my inbox:
 
 
-![Screenshot 2024-06-15 181001](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/07178788-1fa7-4ed7-b47a-0d5434fb51ce)
+![Screenshot 2024-06-15 181031](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/ae270d57-8606-408b-ad84-e0e500fcc6b1)
 
 
 ✔️ It's filled in my first name that was the one placeholder that we had everything else is the same from the template, it worked perfectly 
@@ -423,7 +423,7 @@ ways that you can do that with Lambda you could trigger it when you upload a new
 A. To create an EventBridge, navigate to the console search for EventBridge, then select "EventBridge schedule"
 
 
-![Screenshot 2024-06-15 181031](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/ae270d57-8606-408b-ad84-e0e500fcc6b1)
+![Screenshot 2024-06-15 181052](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/5662c368-821d-4aa5-8263-5b703f9a92ac)
 
 B. For schedule name, i will name it `SendWeeklyEmail`
 C. And then scrolling down you choose your schedule pattern so you can do this just one time or you can
@@ -434,8 +434,8 @@ set up recurring schedule like every week or every month:
 * And then the flexible time window this basically gives it some leeway basically a window in which it can run I'm going to turn that off and say I want it to run at exactly this time and then click "Next"
 
 
+![Screenshot 2024-06-15 181202](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/1eb15317-5a2f-40cf-9c64-054eb7625a8a)
 
-![Screenshot 2024-06-15 181052](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/5662c368-821d-4aa5-8263-5b703f9a92ac)
 
 D. The target there's lots of options to chose from but basically we want to invoke our Lambda function
 
@@ -444,10 +444,7 @@ Tip: If you don’t see your function, make sure you’re in the same region whe
 E. Select the Lambda function, mine was `SendSESEmailToContacts`, then click "Next"
 
 
-
-![Screenshot 2024-06-15 181202](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/1eb15317-5a2f-40cf-9c64-054eb7625a8a)
-
-
+![Screenshot 2024-06-15 181245](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/34b29deb-8afd-41f2-9871-4895667b8329)
 
 
 
@@ -455,8 +452,7 @@ F. The schedule should be enabled by default, if you want to take any action aft
 G. You can just leave everything the default, then click "Next", 
 
 
-![Screenshot 2024-06-15 181245](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/34b29deb-8afd-41f2-9871-4895667b8329)
-
+![Screenshot 2024-06-15 181449](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/266062ea-1a19-4212-abc3-524a0cbca1d6)
 
 
 H. Review all, the click "Create schedule"
@@ -465,14 +461,12 @@ G. In few minutes it should trigger the Lambda function, the Lambda function sho
 Let's just go take a quick look at what happened and how you can debug if you didn't get the email like you thought you should:
 * Back in the EventBridge, clikc the target tab then click the target link
 
-![Screenshot 2024-06-15 181449](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/266062ea-1a19-4212-abc3-524a0cbca1d6)
-
+![Screenshot 2024-06-15 181512](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/8a940f6b-c57b-48f0-a046-548bccd2ae73)
 
 * That'll open up a new tab and then in Lambda if you come into the monitor tab this is where you can see what's going on with this particular function, then click "cloudwatch logs" 
 
 ✔️ If you check our log streams, if we look at the latest one, I've got success messages, I sent two different emails
 
-![Screenshot 2024-06-15 181512](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/8a940f6b-c57b-48f0-a046-548bccd2ae73)
 
 ![Screenshot 2024-06-15 181544](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/6786c212-0eff-439a-a9c6-58dfb5e74a35)
 
