@@ -184,7 +184,7 @@ like GoDaddy etc.)
 
 5. If you successfully did all of those steps then you also will have a Sandbox dashboard
 
-
+![Screenshot 2024-06-15 175257](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/5c68176d-6547-4fb2-bc04-80c1623a35fc)
 
 ## ➡️ Step 4 - Sending a test email using Amazon SES
 
@@ -192,8 +192,8 @@ Let's send an email to make sure everything is working
 
 1. On your Sandbox dashboard click on "Send test email"
 
-![Screenshot 2024-06-15 175257](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/5c68176d-6547-4fb2-bc04-80c1623a35fc)
 
+![Screenshot 2024-06-15 175318](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/52c22b02-0be3-4c77-be0a-c665e6338484)
 
 2. Select "Raw" which will let us test with HTML format
 3. For Scenario, we want to test the scenario where everything is successful, select "Successful delivery"
@@ -201,12 +201,12 @@ Let's send an email to make sure everything is working
 4. Then paste in the HTML that we have from the email template on the Message box
 5. Click on "Send test email"
 
-![Screenshot 2024-06-15 175318](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/52c22b02-0be3-4c77-be0a-c665e6338484)
+
+![Screenshot 2024-06-15 175727](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/067eb646-3955-4a81-89e7-fb02bd2ab241)
 
 6. Then you will get a green checkmark, everything is working
 
-
-![Screenshot 2024-06-15 175727](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/067eb646-3955-4a81-89e7-fb02bd2ab241)
+![Screenshot 2024-06-15 175804](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/22c23744-14ac-488e-9928-36974e9db561)
 
 
 
@@ -218,14 +218,14 @@ We need to validate the individual email addresses that we want to send to, that
 2. Let's create a new identity, click on "Create identity"
 3. Identity type choose "Email address" and leave everything as default, then click "Create identity"
 
-![Screenshot 2024-06-15 175804](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/22c23744-14ac-488e-9928-36974e9db561)
+![Screenshot 2024-06-15 175858](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/9c4a3a0c-b15a-4ce0-837d-cf2d85ea2744)
 
 
 4. You will recieve an email from your inbox, open it and click the link to verify, you will get a success message, we can now start sending emails to that address
 
 5. After you verify all the emails, you will see a list of verified emails
 
-![Screenshot 2024-06-15 175858](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/9c4a3a0c-b15a-4ce0-837d-cf2d85ea2744)
+![Screenshot 2024-06-15 175915](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/1792c4ec-4bfb-4f24-9722-9af702ae9c3f)
 
 
 ## ➡️ Step 6 -  Creating a new Python Lambda function for email logic
@@ -236,8 +236,8 @@ We need a way to merge the email template using Lambda to create and send person
 2. We are going to "Author from scratch", for the function name i'm going to use `SendSESEmailToContacts`, for Runtime we are going to use `python3.12` leave everything as default then click "Create function"
 
 
-![Screenshot 2024-06-15 175915](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/1792c4ec-4bfb-4f24-9722-9af702ae9c3f)
 
+![Screenshot 2024-06-15 180037](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/c575b009-d68d-4305-a97f-1add4a7e2df1)
 
 3. Scroll down to the code section, i've got some code already so you don't have to write this from scratch:
 
@@ -296,14 +296,14 @@ def lambda_handler(event, context):
 6. Grab this code then come back to the Lambda function and just replace everything
 7. Make sure to replace your `bucket_name` `email_template` `contact_csv_file` and `you@yourdomainname.com` with your information if you named them differently with mine
 
-![Screenshot 2024-06-15 180037](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/c575b009-d68d-4305-a97f-1add4a7e2df1)
 
 
+![Screenshot 2024-06-15 180136](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/e0655d5a-23e4-475e-a3bf-276874a81d6c)
 
 8. When copy and paste the Python and update it with your information, click on "Deploy"
 
 
-![Screenshot 2024-06-15 180136](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/e0655d5a-23e4-475e-a3bf-276874a81d6c)
+![Screenshot 2024-06-15 180233](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/21311f7c-0331-4959-9a46-db9260f1a9cf)
 
 
 ## ➡️ Step 7 - Configuring and running a test event for the Lambda function
@@ -311,7 +311,7 @@ def lambda_handler(event, context):
 1. Set up a new test event, click on the Arrow to the right of test, then configure test event, create a new event
 
 
-![Screenshot 2024-06-15 180233](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/21311f7c-0331-4959-9a46-db9260f1a9cf)
+![Screenshot 2024-06-15 180259](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/6ca50f05-f98f-4dc6-ba68-4f4a60227efc)
 
 
 2. We are going to name it `TestSendEmail`
