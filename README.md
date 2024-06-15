@@ -42,7 +42,7 @@ In this hands-on tutorial, I’ll walk you through how to design and build a sim
 4. For Bucket name, enter a name for your bucket, i'm going to name mine `jm-email-marketing`
 5. Block Public Access as best practice, and leave all the defaults, scroll down then click on "Create bucket"
 
-![Screenshot 2024-02-29 at 15 19 16](https://github.com/julien-muke/Tiny_Tales_Mail/assets/110755734/18fe16fc-b604-4d5d-bae8-498b4d4913f4)
+(https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/34ac6c75-c5b5-4028-b126-215736e5e883)
 
 
 ## ➡️ Step 2 - Create The HTML email template & The CSV file with contact information
