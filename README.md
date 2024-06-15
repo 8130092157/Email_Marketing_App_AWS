@@ -1,4 +1,4 @@
-# ![aws](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/006fe0ae-d5b7-46b6-b712-e75b99540321)     Build a Serverless Email Marketing Application on AWS
+ Build a Serverless Email Marketing Application on AWS
 
 
 ## 🤖 Introduction
@@ -9,7 +9,7 @@ In this hands-on tutorial, I’ll walk you through how to design and build a sim
 ## 📐 Architecture Design
 
 
-![Tiny Tales Mail -2](https://github.com/julien-muke/Tiny_Tales_Mail/assets/110755734/8ad7533e-5ae5-4858-a6fb-581562d07857)
+![Tiny Tales Mail -2](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/006fe0ae-d5b7-46b6-b712-e75b99540321)
 
 
 ## ⚙️ AWS Services Used
