@@ -1,4 +1,4 @@
-# ![aws](https://github.com/julien-muke/Search-Engine-Website-using-AWS/assets/110755734/01cd6124-8014-4baa-a5fe-bd227844d263)     Build a Serverless Email Marketing Application on AWS
+# ![aws](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/006fe0ae-d5b7-46b6-b712-e75b99540321)     Build a Serverless Email Marketing Application on AWS
 
 
 ## 🤖 Introduction
