@@ -179,12 +179,11 @@ like GoDaddy etc.)
 4. Amazon is going to send an email to your email address, you'll need to open it up, click on the link to verify that you actually own the email address and once you do you'll be able to send emails from that address.
 
 
-![Screenshot 2024-06-15 181131](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/ff95851c-909b-4e2a-8c65-382b66c6d1de)
+![Screenshot 2024-06-15 175236](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/ac3dfe7e-f2e0-451f-b5b1-a9be5736864e)
 
 
 5. If you successfully did all of those steps then you also will have a Sandbox dashboard
 
-![Screenshot 2024-06-15 181131](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/6c57e9bd-9dbb-4504-96cd-ecda4c7704e7)
 
 
 ## ➡️ Step 4 - Sending a test email using Amazon SES
