@@ -130,7 +130,9 @@ we need a list of the contacts as well, the email addresses to send to.
 3. The other thing that that we're going to place in the S3 bucket is a CSV file of our contacts, make sure the emails that you put are ones that you can actually validate, meaning you can receive emails and click on a link that AWS sends you if you want them to actually go through, you can easily create one from scratch as well but make sure to call it `contacts.csv`
 
 
-![Screenshot 2024-02-29 at 16 10 13](https://github.com/julien-muke/Tiny_Tales_Mail/assets/110755734/ee0477dc-0295-4471-b2cb-d8d832d419fe)
+
+![Screenshot 2024-06-15 174658](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/a69277a1-c041-4b46-9bdf-51606a06795e)
+
 
 
 
@@ -141,7 +143,7 @@ we need a list of the contacts as well, the email addresses to send to.
 2. Then click on "Upload"
 
 
-![Upload-objects-S3-bucket-jm-email-marketing-S3-Global](https://github.com/julien-muke/Tiny_Tales_Mail/assets/110755734/899ff274-d3f9-4128-b84e-701892ce2694)
+![Screenshot 2024-06-15 174751](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/4cbc80c4-c192-4dbb-bd90-694beb04cf7c)
 
 
 ✔️ we've got the S3 bucket <br/>
@@ -157,12 +159,13 @@ Before you start using Amazon SES, you must complete the following tasks:
 
 1. Back over to the console, navigate to SES, then click "Get started"
 
-![Screenshot 2024-02-29 at 15 51 33](https://github.com/julien-muke/Tiny_Tales_Mail/assets/110755734/befd167f-2003-49db-b69c-f338e79a0522)
+
+![Screenshot 2024-06-15 174850](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/ac281e00-02b5-4200-ac7f-7d568f30d026)
 
 
 2. You need to enter the email address that emails will come from, you do have to validate this, AWS will send you an email there's a link in that email that you need to click on, and make sure it's a valid email address
 
-![Screenshot 2024-02-29 at 15 52 32](https://github.com/julien-muke/Tiny_Tales_Mail/assets/110755734/63dc4c09-72f0-48bb-b4a7-38b186acebb6)
+![Screenshot 2024-06-15 175102](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/405e6935-1932-4ab8-a486-d3ff79ae69be)
 
 
 3. Add your sending domain, a domain identity that matches your website or business name. Amazon SES needs to be linked to your domain and verified in order to send emails to your recipients through SES.
@@ -171,7 +174,8 @@ I'm using `julienmuke.com` (if you need to purchase a domain you can use Amazon'
 like GoDaddy etc.)
 
 
-![Screenshot 2024-02-29 at 15 53 16](https://github.com/julien-muke/Tiny_Tales_Mail/assets/110755734/6a1c1a16-9419-4b11-9712-5461f3d53199)
+![Screenshot 2024-06-15 175236](https://github.com/8130092157/Email_Marketing_App_AWS/assets/75124490/c949bb86-409f-4453-b2a5-8ac762e3784e)
+
 
 
 4. Amazon is going to send an email to your email address, you'll need to open it up, click on the link to verify that you actually own the email address and once you do you'll be able to send emails from that address.
